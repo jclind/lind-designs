@@ -1,0 +1,104 @@
+.navbar {
+  background: var(--gray-100);
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.navbar .nav-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: var(--maxWidth);
+}
+
+.navbar .nav-center .nav-header {
+  height: var(--navHeight);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+}
+
+.navbar .nav-center .nav-header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: var(--navHeight);
+}
+
+.navbar .nav-center .nav-header .logo img {
+  height: 60%;
+}
+
+.navbar .nav-center .nav-header .nav-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: var(--gray-1000);
+}
+
+.navbar .nav-center .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 0;
+  width: 90%;
+  overflow: hidden;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.navbar .nav-center .nav-links .nav-link {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  border-top: 1px solid var(--borderColor);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--gray-1000);
+  font-size: 1.25rem;
+}
+
+.navbar .nav-center .nav-links.show-links {
+  height: 8rem;
+}
+/*# sourceMappingURL=Navbar.css.map */
