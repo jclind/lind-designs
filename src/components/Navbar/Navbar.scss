@@ -1,3 +1,5 @@
+@import '../../vars';
+
 .navbar {
   background: var(--gray-100);
   width: 100%;
@@ -9,6 +11,7 @@
     align-items: center;
     justify-content: center;
     max-width: var(--maxWidth);
+    margin: 0 auto;
 
     .nav-header {
       height: var(--navHeight);
@@ -61,6 +64,47 @@
     }
     .nav-links.show-links {
       height: 8rem;
+    }
+    @media screen and (min-width: $sm) {
+      padding: 0 1rem;
+      flex-direction: row;
+      height: var(--navHeight);
+
+      .nav-btn {
+        display: none;
+      }
+
+      .nav-links {
+        height: var(--navHeight);
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 100%;
+
+        .nav-link {
+          height: fit-content;
+          border-radius: var(--borderRadius);
+          // background: red;
+          border: none;
+          width: fit-content;
+          padding: 0 2rem;
+        }
+        .contact-link {
+          padding: 0.5rem 1rem;
+          background: var(--secondary);
+        }
+      }
+      .nav-links.show-links {
+        height: 100%;
+      }
+    }
+    @media screen and (min-width: $md) {
+      padding: 0 2rem;
+      .nav-link {
+        margin: 0 1rem;
+      }
+    }
+    @media screen and (min-width: $lg) {
+      padding: 0 2rem;
     }
   }
 }

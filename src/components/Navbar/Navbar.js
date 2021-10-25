@@ -32,6 +32,9 @@ const Navbar = () => {
               </Link>
             )
           })}
+          <Link className='nav-link contact-link' to='/contact'>
+            Contact
+          </Link>
         </div>
       </div>
     </nav>

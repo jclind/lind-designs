@@ -70,6 +70,7 @@
   --bodyFont: 'Zen Kaku Gothic New', sans-serif;
 
   --navHeight: 6rem;
+  --borderRadius: 5px;
 
   --transition: 0.3s ease-in-out all;
 }

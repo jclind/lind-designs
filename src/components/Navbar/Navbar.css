@@ -19,6 +19,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   max-width: var(--maxWidth);
+  margin: 0 auto;
 }
 
 .navbar .nav-center .nav-header {
@@ -100,5 +101,63 @@
 
 .navbar .nav-center .nav-links.show-links {
   height: 8rem;
+}
+
+@media screen and (min-width: 640px) {
+  .navbar .nav-center {
+    padding: 0 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: var(--navHeight);
+  }
+  .navbar .nav-center .nav-btn {
+    display: none;
+  }
+  .navbar .nav-center .nav-links {
+    height: var(--navHeight);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+  }
+  .navbar .nav-center .nav-links .nav-link {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: var(--borderRadius);
+    border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 2rem;
+  }
+  .navbar .nav-center .nav-links .contact-link {
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+  }
+  .navbar .nav-center .nav-links.show-links {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar .nav-center {
+    padding: 0 2rem;
+  }
+  .navbar .nav-center .nav-link {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar .nav-center {
+    padding: 0 2rem;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */
