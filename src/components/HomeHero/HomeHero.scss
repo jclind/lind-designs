@@ -1,0 +1,72 @@
+@import '../../vars';
+
+.home-hero {
+  position: relative;
+  background-image: linear-gradient(
+    to right top,
+    #558fff,
+    #4d89ff,
+    #4483ff,
+    #3b7dff,
+    #3277ff,
+    #2c71f8,
+    #266af2,
+    #2064eb,
+    #1c5cdc,
+    #1753ce,
+    #114bc0,
+    #0943b2
+  );
+  height: calc(100vh - var(--navHeight));
+  width: 100%;
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      // max-height: 150px;
+      // max-height: 70px;
+      width: 90%;
+      max-width: 450px;
+      padding-bottom: 4rem;
+    }
+    .btns {
+      display: flex;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: calc(var(--navHeight) * 2);
+    }
+    .btns button {
+      flex: 1;
+      max-width: 40%;
+    }
+    @media screen and (min-width: $md) {
+      .btns button {
+        flex: 1;
+        max-width: 35%;
+      }
+    }
+    @media screen and (min-width: $lg) {
+      img {
+        max-width: 500px;
+        padding-bottom: 6rem;
+      }
+      .btns {
+        padding-bottom: calc(var(--navHeight) * 1.5);
+      }
+    }
+  }
+}

@@ -63,7 +63,7 @@
 
   --purple: #5e1aa4;
   --red: #ef2020;
-
+  --white: rgb(255, 255, 255);
   --maxWidth: 1200px;
 
   --headingFont: 'Montserrat', sans-serif;
@@ -138,18 +138,28 @@ a {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   outline: none;
   border: none;
   box-shadow: none;
   background: none;
+  cursor: pointer;
 }
 
-.App {
-  margin: 2rem auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+/* Hero */
+.hero-title {
+  font-size: 3.5rem;
+}
+
+.page-btn {
+  height: fit-content;
+  font-size: 1.8rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--secondary);
+  font-family: var(--headingFont);
+  border-radius: var(--borderRadius);
+  color: var(--gray-1000);
 }
