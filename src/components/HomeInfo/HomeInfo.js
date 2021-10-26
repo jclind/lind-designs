@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router'
 import './HomeInfo.css'
 import {
   BsPeople,
@@ -7,9 +8,11 @@ import {
   BsChatText,
   BsChat,
 } from 'react-icons/bs'
-const HomeInfo = () => {
+const HomeInfo = ({ homeInfoRef }) => {
+  const history = useHistory()
+
   return (
-    <section className='home-info section'>
+    <section className='home-info section' ref={homeInfoRef}>
       <div className='section-inner'>
         <h1 className='section-title'>Welcome to Lind Designs</h1>
         <div className='grid'>
@@ -91,7 +94,12 @@ const HomeInfo = () => {
             <p className='article-text'>
               Email info@linddesigns for a free consultation.
             </p>
-            <button className='page-btn'>Contact</button>
+            <button
+              className='page-btn'
+              onClick={() => history.push('/contact')}
+            >
+              Contact
+            </button>
           </article>
         </div>
       </div>
