@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <Link className='logo'>
+          <Link className='logo' to='/'>
             <img src={logo} alt='Lind Designs' />
           </Link>
           <button

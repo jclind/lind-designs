@@ -1,19 +1,20 @@
+@import '../../vars';
+
 .contact-page {
-  padding-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--gray-1100);
-  min-height: 100vh;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
   width: 100%;
   color: var(--gray-200);
 
   .container {
+    padding: 4rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    height: fit-content;
     width: 100%;
-    padding-bottom: 4rem;
     max-width: var(--maxWidth);
     .grid-item {
       display: flex;
@@ -61,7 +62,6 @@
     }
     .form {
       width: 100%;
-      height: fit-content;
       text-align: left;
       padding-top: 2rem;
 
@@ -110,6 +110,29 @@
           margin-top: 1rem;
           margin-right: auto;
         }
+      }
+    }
+  }
+  @media screen and (min-width: $md) {
+    .container {
+      max-width: 800px;
+    }
+  }
+  @media screen and (min-width: $lg) {
+    .container {
+      width: 95%;
+      align-items: center;
+      gap: 2rem;
+      max-width: var(--maxWidth);
+
+      grid-template-columns: 1fr 1fr;
+
+      .info {
+        border: none;
+        border-right: 1px solid var(--white);
+      }
+      .form {
+        padding: 0;
       }
     }
   }

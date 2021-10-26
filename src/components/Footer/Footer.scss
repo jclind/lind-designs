@@ -1,4 +1,6 @@
 footer {
+  box-sizing: border-box;
+  height: var(--footerHeight);
   display: flex;
   flex-direction: column;
   justify-content: center;

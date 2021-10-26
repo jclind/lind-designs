@@ -1,4 +1,7 @@
 footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: var(--footerHeight);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
