@@ -99,6 +99,12 @@
   font-size: 1.25rem;
 }
 
+.navbar .nav-center .nav-links .active-link {
+  color: var(--gray-1100);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
 .navbar .nav-center .nav-links.show-links {
   height: 8rem;
 }

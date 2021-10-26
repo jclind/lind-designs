@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../assets/images/ld-logo-black.png'
 import Hamburger from 'hamburger-react'
@@ -11,9 +11,9 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <Link className='logo' to='/'>
+          <NavLink className='logo' to='/' exact={true}>
             <img src={logo} alt='Lind Designs' />
-          </Link>
+          </NavLink>
           <button
             className={show ? 'nav-btn show' : 'nav-btn'}
             onClick={() => {
@@ -27,14 +27,19 @@ const Navbar = () => {
           {navLinks.map(link => {
             const { name, path } = link
             return (
-              <Link className='nav-link' to={path}>
+              <NavLink
+                className='nav-link'
+                to={path}
+                activeClassName='active-link'
+                exact={true}
+              >
                 {name}
-              </Link>
+              </NavLink>
             )
           })}
-          <Link className='nav-link contact-link' to='/contact'>
+          <NavLink className='nav-link contact-link' to='/contact' exact={true}>
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>
