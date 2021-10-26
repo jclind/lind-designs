@@ -1,0 +1,15 @@
+.error-page {
+  min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
+  width: 100%;
+  background: var(--gray-1100);
+  color: var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
