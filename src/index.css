@@ -64,6 +64,7 @@
   --purple: #5e1aa4;
   --red: #ef2020;
   --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
   --maxWidth: 1200px;
 
   --headingFont: 'Montserrat', sans-serif;
@@ -149,6 +150,10 @@ button {
   cursor: pointer;
 }
 
+label {
+  font-family: var(--bodyFont);
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -170,6 +175,18 @@ ul {
   font-family: var(--headingFont);
   border-radius: var(--borderRadius);
   color: var(--gray-1000);
+}
+
+.section-btn {
+  height: fit-content;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: var(--headingFont);
+  background: var(--secondary);
+  color: var(--gray-1000);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--borderRadius);
 }
 
 .section {

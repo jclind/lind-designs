@@ -1,0 +1,116 @@
+.contact-page {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray-1100);
+  min-height: 100vh;
+  width: 100%;
+  color: var(--gray-200);
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 4rem;
+    max-width: var(--maxWidth);
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        margin: 0;
+      }
+      .section-text {
+        padding: 1rem 0 1rem 0;
+        margin: 0 auto 1rem auto;
+        width: 90%;
+      }
+      .contact-item {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        // justify-content: flex-start;
+        text-align: left;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      .address {
+        .text span {
+          display: block;
+        }
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .icon {
+        font-size: 1.5rem;
+        color: var(--secondary);
+      }
+    }
+    .info {
+      height: fit-content;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .form {
+      width: 100%;
+      height: fit-content;
+      text-align: left;
+      padding-top: 2rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 1rem;
+
+        label {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          color: var(--gray-200);
+
+          &:focus-within {
+            color: var(--secondary);
+          }
+        }
+        input,
+        textarea {
+          width: 100%;
+          box-sizing: border-box;
+          outline: none;
+          background: none;
+          border: none;
+          padding: 0.5rem 0.5rem;
+          margin-top: 0.25rem;
+          background: var(--gray-900);
+          border-radius: var(--borderRadius);
+          border: 1px solid var(--gray-800);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          color: var(--gray-200);
+
+          &:focus {
+            border: 2px solid var(--secondary);
+          }
+        }
+        input {
+          height: 45px;
+        }
+        button.submit {
+          margin: 0;
+          margin-top: 1rem;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.contact-page {
+  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--gray-1100);
+  min-height: 100vh;
+  width: 100%;
+  color: var(--gray-200);
+}
+
+.contact-page .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 4rem;
+  max-width: var(--maxWidth);
+}
+
+.contact-page .container .grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact-page .container .grid-item h1 {
+  margin: 0;
+}
+
+.contact-page .container .grid-item .section-text {
+  padding: 1rem 0 1rem 0;
+  margin: 0 auto 1rem auto;
+  width: 90%;
+}
+
+.contact-page .container .grid-item .contact-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: left;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-page .container .grid-item .address .text span {
+  display: block;
+}
+
+.contact-page .container .grid-item .icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-page .container .grid-item .icon {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.contact-page .container .info {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.contact-page .container .form {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.contact-page .container .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  gap: 1rem;
+}
+
+.contact-page .container .form form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  color: var(--gray-200);
+}
+
+.contact-page .container .form form label:focus-within {
+  color: var(--secondary);
+}
+
+.contact-page .container .form form input,
+.contact-page .container .form form textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  margin-top: 0.25rem;
+  background: var(--gray-900);
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--gray-800);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--gray-200);
+}
+
+.contact-page .container .form form input:focus,
+.contact-page .container .form form textarea:focus {
+  border: 2px solid var(--secondary);
+}
+
+.contact-page .container .form form input {
+  height: 45px;
+}
+
+.contact-page .container .form form button.submit {
+  margin: 0;
+  margin-top: 1rem;
+  margin-right: auto;
+}
+/*# sourceMappingURL=Contact.css.map */
