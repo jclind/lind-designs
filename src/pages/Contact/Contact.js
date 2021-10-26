@@ -17,19 +17,18 @@ const Contact = () => {
               <div className='icon-container'>
                 <AiOutlineMail className='icon' />
               </div>
-              dlind@linddesigns.com
+              info@linddesigns.com
             </div>
-            <div className='address contact-item'>
+            {/* <div className='address contact-item'>
               <div className='icon-container'>
                 <IoLocationOutline className='icon' />
               </div>
               <div className='text'>
-                <span> 106 oakwood circle</span> <span>Gibsonia, PA 15044</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className='form grid-item'>
+        {/* <div className='form grid-item'>
           <form action=''>
             <label>
               Name:
@@ -52,7 +51,7 @@ const Contact = () => {
             </label>
             <button className='submit section-btn'>Submit</button>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   )

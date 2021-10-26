@@ -58,7 +58,7 @@
     .info {
       height: fit-content;
       padding-bottom: 2rem;
-      border-bottom: 1px solid var(--gray-200);
+      // border-bottom: 1px solid var(--gray-200);
     }
     .form {
       width: 100%;
@@ -125,11 +125,11 @@
       gap: 2rem;
       max-width: var(--maxWidth);
 
-      grid-template-columns: 1fr 1fr;
+      // grid-template-columns: 1fr;
 
       .info {
         border: none;
-        border-right: 1px solid var(--white);
+        // border-right: 1px solid var(--white);
       }
       .form {
         padding: 0;

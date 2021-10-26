@@ -7,11 +7,16 @@ import { navLinks } from '../../assets/data/navLinks'
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
+
+  const handleClick = () => {
+    setShow(false)
+  }
+
   return (
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <NavLink className='logo' to='/' exact={true}>
+          <NavLink className='logo' to='/' exact={true} onClick={handleClick}>
             <img src={logo} alt='Lind Designs' />
           </NavLink>
           <button
@@ -32,12 +37,18 @@ const Navbar = () => {
                 to={path}
                 activeClassName='active-link'
                 exact={true}
+                onClick={handleClick}
               >
                 {name}
               </NavLink>
             )
           })}
-          <NavLink className='nav-link contact-link' to='/contact' exact={true}>
+          <NavLink
+            className='nav-link contact-link'
+            to='/contact'
+            exact={true}
+            onClick={handleClick}
+          >
             Contact
           </NavLink>
         </div>

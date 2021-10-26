@@ -89,7 +89,7 @@ const HomeInfo = () => {
             </div>
             <h2 className='article-title'>Contact us</h2>
             <p className='article-text'>
-              Email dlind@linddesigns for a free consultation.
+              Email info@linddesigns for a free consultation.
             </p>
             <button className='page-btn'>Contact</button>
           </article>
