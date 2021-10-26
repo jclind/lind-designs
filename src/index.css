@@ -149,6 +149,14 @@ button {
   cursor: pointer;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
 /* Hero */
 .hero-title {
   font-size: 3.5rem;
@@ -162,4 +170,12 @@ button {
   font-family: var(--headingFont);
   border-radius: var(--borderRadius);
   color: var(--gray-1000);
+}
+
+.section {
+}
+.section-inner {
+  height: 100%;
+  width: 100%;
+  padding: 4rem 0;
 }
