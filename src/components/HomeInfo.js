@@ -84,9 +84,9 @@ const HomeInfo = ({ homeInfoRef }) => {
             <p className='article-text'>
               Email info@linddesigns for a free consultation.
             </p>
-            <button className='page-btn'>
-              <Link href='/contact'>Contact</Link>
-            </button>
+            <Link href='/contact'>
+              <button className='page-btn'>Contact</button>
+            </Link>
           </article>
         </div>
       </div>

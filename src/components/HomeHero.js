@@ -9,9 +9,9 @@ const HomeHero = ({ scrollToInfo }) => {
           <button className='about page-btn' onClick={scrollToInfo}>
             About
           </button>
-          <button className='contact page-btn'>
-            <Link href='/contact'>Contact</Link>
-          </button>
+          <Link href='/contact'>
+            <button className='contact page-btn'>Contact</button>
+          </Link>
         </div>
       </div>
     </div>
