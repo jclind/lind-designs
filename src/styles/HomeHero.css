@@ -1,15 +1,13 @@
 .home-hero {
   position: relative;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#558fff), color-stop(#4d89ff), color-stop(#4483ff), color-stop(#3b7dff), color-stop(#3277ff), color-stop(#2c71f8), color-stop(#266af2), color-stop(#2064eb), color-stop(#1c5cdc), color-stop(#1753ce), color-stop(#114bc0), to(#0943b2));
-  background-image: linear-gradient(to right top, #558fff, #4d89ff, #4483ff, #3b7dff, #3277ff, #2c71f8, #266af2, #2064eb, #1c5cdc, #1753ce, #114bc0, #0943b2);
   height: calc(100vh - var(--navHeight));
   width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#558fff), color-stop(#4d89ff), color-stop(#4483ff), color-stop(#3b7dff), color-stop(#3277ff), color-stop(#2c71f8), color-stop(#266af2), color-stop(#2064eb), color-stop(#1c5cdc), color-stop(#1753ce), color-stop(#114bc0), to(#0943b2));
+  background-image: linear-gradient(to right top, #558fff, #4d89ff, #4483ff, #3b7dff, #3277ff, #2c71f8, #266af2, #2064eb, #1c5cdc, #1753ce, #114bc0, #0943b2);
 }
 
 .home-hero .content {
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -27,6 +25,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .home-hero .content img {
@@ -39,12 +39,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  max-width: 600px;
-  display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 100%;
+  max-width: 600px;
   padding-bottom: calc(var(--navHeight) * 2);
 }
 

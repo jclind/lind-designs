@@ -11,7 +11,18 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Lind Designs | Home</title>
+        <title>Home | Lind Designs</title>
+        <meta
+          name='keywords'
+          content='technology services, virtualization, backup service'
+        />
+        <meta
+          name='description'
+          content='Lind Designs is a provider of enterprise technology solutions and services.'
+        />
+        <meta charSet='utf8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='author' content='Jesse Lind' />
       </Head>
       <div className='page home-page'>
         <HomeHero scrollToInfo={scrollToInfo} />

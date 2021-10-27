@@ -1,7 +1,4 @@
 .footer {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: var(--footerHeight);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,9 +12,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: var(--footerHeight);
   width: 100%;
-  background: var(--secondary);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 1rem 0;
+  background: var(--secondary);
 }
 
 .footer img {

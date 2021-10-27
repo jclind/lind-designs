@@ -25,27 +25,25 @@
 .home-info .grid {
   display: -ms-grid;
   display: grid;
-  justify-items: center;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
   width: 90%;
   max-width: var(--maxWidth);
   margin: 0 auto;
-  gap: 1rem;
 }
 
 .home-info .grid article {
-  background: var(--gray-1000);
   width: 100%;
   padding: 1rem 0.5rem 2rem 0.5rem;
   border-radius: var(--borderRadius);
+  background: var(--gray-1000);
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
 .home-info .grid article p {
-  width: 90%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,6 +54,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
@@ -65,8 +65,8 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 1rem 2rem;
-  text-align: left;
   margin-top: 1rem;
+  text-align: left;
   text-decoration: underline;
 }
 
@@ -76,10 +76,10 @@
 
 .home-info .grid article button {
   margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  color: var(--gray-1000);
   font-size: 1.25rem;
   font-weight: bold;
-  color: var(--gray-1000);
-  padding: 0.75rem 1.5rem;
 }
 
 .home-info .grid .icon-container {
@@ -92,16 +92,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--secondary);
-  border-radius: 50%;
   width: 60px;
   height: 60px;
   margin: 1rem auto;
+  border-radius: 50%;
+  background: var(--secondary);
 }
 
 .home-info .grid .icon-container .icon {
-  font-size: 1.8rem;
   color: var(--gray-1100);
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 640px) {

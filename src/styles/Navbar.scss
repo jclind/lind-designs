@@ -1,8 +1,9 @@
 @import './vars';
 
 .navbar {
-  background: var(--gray-100);
   width: 100%;
+
+  background: var(--gray-100);
   text-transform: capitalize;
 
   .nav-center {
@@ -14,30 +15,34 @@
     margin: 0 auto;
 
     .nav-header {
-      height: var(--navHeight);
       position: relative;
+
       display: flex;
       justify-content: space-between;
+      height: var(--navHeight);
       width: 95%;
 
       .logo-container {
         display: flex;
         align-items: center;
+
         .logo {
           display: flex;
           justify-content: center;
           align-items: center;
           height: var(--navHeight);
           height: 60%;
+
           cursor: pointer;
         }
       }
 
       .nav-btn {
         position: absolute;
-        right: 0;
         top: 50%;
+        right: 0;
         transform: translateY(-50%);
+
         color: var(--gray-1000);
       }
     }
@@ -50,18 +55,19 @@
       height: 0;
       width: 90%;
       overflow: hidden;
-      // margin-top: var(--navHeight);
+
       transition: var(--transition);
 
       .nav-link {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 4rem;
+        width: 100%;
         border-top: 1px solid var(--borderColor);
-        font-family: 'Montserrat', sans-serif;
+
         color: var(--gray-1000);
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.25rem;
       }
       .active-link {
@@ -74,27 +80,25 @@
       height: 8rem;
     }
     @media screen and (min-width: $sm) {
-      padding: 0 1rem;
       flex-direction: row;
       height: var(--navHeight);
+      padding: 0 1rem;
 
       .nav-btn {
         display: none;
       }
 
       .nav-links {
-        height: var(--navHeight);
         flex-direction: row;
         justify-content: flex-end;
-        height: 100%;
+        height: var(--navHeight);
 
         .nav-link {
           height: fit-content;
-          border-radius: var(--borderRadius);
-          // background: red;
-          border: none;
           width: fit-content;
           padding: 0 2rem;
+          border: none;
+          border-radius: var(--borderRadius);
         }
         .contact-link {
           padding: 0.5rem 1rem;
@@ -107,6 +111,7 @@
     }
     @media screen and (min-width: $md) {
       padding: 0 2rem;
+
       .nav-link {
         margin: 0 1rem;
       }

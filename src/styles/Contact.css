@@ -8,22 +8,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--gray-1100);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
   width: 100%;
+  background: var(--gray-1100);
   color: var(--gray-200);
 }
 
 .contact-page .container {
-  padding: 4rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   width: 100%;
   max-width: var(--maxWidth);
+  padding: 4rem 0;
 }
 
 .contact-page .container .grid-item {
@@ -45,15 +45,12 @@
 }
 
 .contact-page .container .grid-item .section-text {
+  width: 90%;
   padding: 1rem 0 1rem 0;
   margin: 0 auto 1rem auto;
-  width: 90%;
 }
 
 .contact-page .container .grid-item .contact-item {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,9 +58,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-align: left;
   gap: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .contact-page .container .grid-item .address .text span {
@@ -83,8 +83,8 @@
 }
 
 .contact-page .container .grid-item .icon {
-  font-size: 1.5rem;
   color: var(--secondary);
+  font-size: 1.5rem;
 }
 
 .contact-page .container .info {
@@ -96,8 +96,8 @@
 
 .contact-page .container .form {
   width: 100%;
-  text-align: left;
   padding-top: 2rem;
+  text-align: left;
 }
 
 .contact-page .container .form form {
@@ -111,8 +111,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
   gap: 1rem;
+  width: 90%;
 }
 
 .contact-page .container .form form label {
@@ -136,17 +136,17 @@
 
 .contact-page .container .form form input,
 .contact-page .container .form form textarea {
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: none;
-  background: none;
-  border: none;
+  width: 100%;
   padding: 0.5rem 0.5rem;
   margin-top: 0.25rem;
-  background: var(--gray-900);
+  border: none;
   border-radius: var(--borderRadius);
   border: 1px solid var(--gray-800);
+  background: none;
+  background: var(--gray-900);
+  outline: none;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: var(--gray-200);
@@ -175,12 +175,12 @@
 
 @media screen and (min-width: 1024px) {
   .contact-page .container {
-    width: 95%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 2rem;
+    width: 95%;
     max-width: var(--maxWidth);
+    gap: 2rem;
   }
   .contact-page .container .info {
     border: none;

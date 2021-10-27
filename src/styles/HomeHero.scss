@@ -2,6 +2,9 @@
 
 .home-hero {
   position: relative;
+  height: calc(100vh - var(--navHeight));
+  width: 100%;
+
   background-image: linear-gradient(
     to right top,
     #558fff,
@@ -17,13 +20,9 @@
     #114bc0,
     #0943b2
   );
-  height: calc(100vh - var(--navHeight));
-  width: 100%;
 
   .content {
     position: absolute;
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -33,20 +32,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
 
     img {
-      // max-height: 150px;
-      // max-height: 70px;
       width: 90%;
       max-width: 450px;
       padding-bottom: 4rem;
     }
     .btns {
       display: flex;
+      justify-content: space-evenly;
       width: 100%;
       max-width: 600px;
-      display: flex;
-      justify-content: space-evenly;
       padding-bottom: calc(var(--navHeight) * 2);
     }
     .btns button {
