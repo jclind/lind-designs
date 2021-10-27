@@ -1,11 +1,11 @@
 # Lind Designs
 
-[Lind Designs](https://personaltimetracker.netlify.app/) is the official website for the Lind Designs company. 
+[Lind Designs](http://linddesigns.com/) is the official website for the Lind Designs company. 
 
 ## Installation and Running'
 
 #### 1. Clone This Repository
-`git clone https://github.com/jclind/jesse-lind-photography.git`
+`git clone https://github.com/jclind/lind-designs.git`
 #### 2. Install Dependencies
 `npm install`
 #### 3. Develop
