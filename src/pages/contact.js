@@ -1,7 +1,4 @@
-import React from 'react'
-import './Contact.css'
 import { AiOutlineMail } from 'react-icons/ai'
-import { IoLocationOutline } from 'react-icons/io5'
 
 const Contact = () => {
   return (

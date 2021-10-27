@@ -1,8 +1,7 @@
-.error-page {
-  min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
-  width: 100%;
-  background: var(--gray-1100);
-  color: var(--gray-200);
+.footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: var(--footerHeight);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,10 +15,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  background: var(--secondary);
+  padding: 1rem 0;
 }
 
-.error-page button {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+.footer img {
+  max-height: 60px;
 }
-/*# sourceMappingURL=Error.css.map */
+
+.footer p {
+  margin: 0;
+}
+/*# sourceMappingURL=Footer.css.map */
