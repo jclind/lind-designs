@@ -1,4 +1,4 @@
-@import '../../vars';
+@import './vars';
 
 .navbar {
   background: var(--gray-100);
@@ -20,13 +20,16 @@
       justify-content: space-between;
       width: 95%;
 
-      .logo {
+      .logo-container {
         display: flex;
-        justify-content: center;
         align-items: center;
-        height: var(--navHeight);
-        img {
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: var(--navHeight);
           height: 60%;
+          cursor: pointer;
         }
       }
 

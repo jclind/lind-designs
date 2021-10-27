@@ -1,16 +1,6 @@
-import React from 'react'
-import { useHistory } from 'react-router'
-import './HomeInfo.css'
-import {
-  BsPeople,
-  BsBagCheck,
-  BsGear,
-  BsChatText,
-  BsChat,
-} from 'react-icons/bs'
+import Link from 'next/link'
+import { BsPeople, BsBagCheck, BsGear, BsChatText } from 'react-icons/bs'
 const HomeInfo = ({ homeInfoRef }) => {
-  const history = useHistory()
-
   return (
     <section className='home-info section' ref={homeInfoRef}>
       <div className='section-inner'>
@@ -94,11 +84,8 @@ const HomeInfo = ({ homeInfoRef }) => {
             <p className='article-text'>
               Email info@linddesigns for a free consultation.
             </p>
-            <button
-              className='page-btn'
-              onClick={() => history.push('/contact')}
-            >
-              Contact
+            <button className='page-btn'>
+              <Link href='/contact'>Contact</Link>
             </button>
           </article>
         </div>

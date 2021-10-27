@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import './Navbar.css'
-import logo from '../../assets/images/ld-logo-black.png'
+import { useState } from 'react'
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 import Hamburger from 'hamburger-react'
-import { navLinks } from '../../assets/data/navLinks'
+import { navLinks } from '../assets/data/navLinks'
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
+  const router = useRouter()
 
   const handleClick = () => {
     setShow(false)
@@ -16,9 +16,15 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
-          <NavLink className='logo' to='/' exact={true} onClick={handleClick}>
-            <img src={logo} alt='Lind Designs' />
-          </NavLink>
+          <div className='logo-container'>
+            <Link href='/' exact={true} onClick={handleClick}>
+              <img
+                src='/ld-logo-black.png'
+                alt='Lind Designs'
+                className='logo'
+              />
+            </Link>
+          </div>
           <button
             className={show ? 'nav-btn show' : 'nav-btn'}
             onClick={() => {
@@ -32,25 +38,19 @@ const Navbar = () => {
           {navLinks.map(link => {
             const { name, path } = link
             return (
-              <NavLink
-                className='nav-link'
-                to={path}
-                activeClassName='active-link'
-                exact={true}
+              <div
+                className={
+                  router.pathname == path ? 'nav-link active-link' : 'nav-link'
+                }
                 onClick={handleClick}
               >
-                {name}
-              </NavLink>
+                <Link href={path}>{name}</Link>
+              </div>
             )
           })}
-          <NavLink
-            className='nav-link contact-link'
-            to='/contact'
-            exact={true}
-            onClick={handleClick}
-          >
-            Contact
-          </NavLink>
+          <div className='nav-link contact-link' onClick={handleClick}>
+            <Link href='/contact'>Contact</Link>
+          </div>
         </div>
       </div>
     </nav>
