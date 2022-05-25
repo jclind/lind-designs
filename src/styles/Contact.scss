@@ -5,17 +5,17 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
+  min-height: calc(100vh - #{$navHeight} - #{$footerHeight});
   width: 100%;
 
-  background: var(--gray-1100);
-  color: var(--gray-200);
+  background: $gray-1100;
+  color: $gray-200;
 
   .container {
     display: grid;
     grid-template-columns: 1fr;
     width: 100%;
-    max-width: var(--maxWidth);
+    max-width: $maxWidth;
     padding: 4rem 0;
 
     .grid-item {
@@ -53,7 +53,7 @@
         align-items: center;
       }
       .icon {
-        color: var(--secondary);
+        color: $secondary;
         font-size: 1.5rem;
       }
     }
@@ -80,10 +80,10 @@
           align-items: flex-start;
           width: 100%;
 
-          color: var(--gray-200);
+          color: $gray-200;
 
           &:focus-within {
-            color: var(--secondary);
+            color: $secondary;
           }
         }
         input,
@@ -93,17 +93,17 @@
           padding: 0.5rem 0.5rem;
           margin-top: 0.25rem;
           border: none;
-          border-radius: var(--borderRadius);
-          border: 1px solid var(--gray-800);
+          border-radius: $borderRadius;
+          border: 1px solid $gray-800;
 
           background: none;
-          background: var(--gray-900);
+          background: $gray-900;
           outline: none;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          color: var(--gray-200);
+          color: $gray-200;
 
           &:focus {
-            border: 2px solid var(--secondary);
+            border: 2px solid $secondary;
           }
         }
         input {
@@ -126,7 +126,7 @@
     .container {
       align-items: center;
       width: 95%;
-      max-width: var(--maxWidth);
+      max-width: $maxWidth;
       gap: 2rem;
 
       .info {

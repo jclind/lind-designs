@@ -1,11 +1,11 @@
 import 'normalize.css'
-import '../styles/globals.css'
-import '../styles/Contact.css'
-import '../styles/404.css'
-import '../styles/Navbar.css'
-import '../styles/Footer.css'
-import '../styles/HomeHero.css'
-import '../styles/HomeInfo.css'
+import '../styles/index.scss'
+import '../styles/Contact.scss'
+import '../styles/404.scss'
+import '../styles/Navbar.scss'
+import '../styles/Footer.scss'
+import '../styles/HomeHero.scss'
+import '../styles/HomeInfo.scss'
 
 import Layout from '../components/Layout'
 function MyApp({ Component, pageProps }) {

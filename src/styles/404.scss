@@ -1,13 +1,15 @@
+@import './vars.scss';
+
 .error-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - var(--navHeight) - var(--footerHeight));
+  min-height: calc(100vh - #{$navHeight} - #{$footerHeight});
   width: 100%;
 
-  background: var(--gray-1100);
-  color: var(--gray-200);
+  background: $gray-1100;
+  color: $gray-200;
 
   button {
     margin-top: 2rem;

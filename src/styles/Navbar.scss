@@ -3,7 +3,7 @@
 .navbar {
   width: 100%;
 
-  background: var(--gray-100);
+  background: $gray-100;
   text-transform: capitalize;
 
   .nav-center {
@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: var(--maxWidth);
+    max-width: $maxWidth;
     margin: 0 auto;
 
     .nav-header {
@@ -19,7 +19,7 @@
 
       display: flex;
       justify-content: space-between;
-      height: var(--navHeight);
+      height: $navHeight;
       width: 95%;
 
       .logo-container {
@@ -30,7 +30,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: var(--navHeight);
+          height: $navHeight;
           height: 60%;
 
           cursor: pointer;
@@ -43,7 +43,7 @@
         right: 0;
         transform: translateY(-50%);
 
-        color: var(--gray-1000);
+        color: $gray-1000;
       }
     }
 
@@ -56,7 +56,7 @@
       width: 90%;
       overflow: hidden;
 
-      transition: var(--transition);
+      transition: $transition;
 
       .nav-link {
         display: flex;
@@ -64,14 +64,14 @@
         align-items: center;
         height: 4rem;
         width: 100%;
-        border-top: 1px solid var(--borderColor);
+        border-top: 1px solid $borderColor;
 
-        color: var(--gray-1000);
+        color: $gray-1000;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.25rem;
       }
       .active-link {
-        color: var(--gray-1100);
+        color: $gray-1100;
         text-decoration: underline;
         text-underline-offset: 10px;
       }
@@ -81,7 +81,7 @@
     }
     @media screen and (min-width: $sm) {
       flex-direction: row;
-      height: var(--navHeight);
+      height: $navHeight;
       padding: 0 1rem;
 
       .nav-btn {
@@ -91,18 +91,18 @@
       .nav-links {
         flex-direction: row;
         justify-content: flex-end;
-        height: var(--navHeight);
+        height: $navHeight;
 
         .nav-link {
           height: fit-content;
           width: fit-content;
           padding: 0 2rem;
           border: none;
-          border-radius: var(--borderRadius);
+          border-radius: $borderRadius;
         }
         .contact-link {
           padding: 0.5rem 1rem;
-          background: var(--secondary);
+          background: $secondary;
         }
       }
       .nav-links.show-links {

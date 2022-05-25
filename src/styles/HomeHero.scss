@@ -1,8 +1,8 @@
-@import './vars';
+@import './vars.scss';
 
 .home-hero {
   position: relative;
-  height: calc(100vh - var(--navHeight));
+  height: calc(100vh - #{$navHeight});
   width: 100%;
 
   background-image: linear-gradient(
@@ -45,7 +45,7 @@
       justify-content: space-evenly;
       width: 100%;
       max-width: 600px;
-      padding-bottom: calc(var(--navHeight) * 2);
+      padding-bottom: calc(#{$navHeight} * 2);
     }
     .btns button {
       flex: 1;
@@ -63,7 +63,7 @@
         padding-bottom: 6rem;
       }
       .btns {
-        padding-bottom: calc(var(--navHeight) * 1.5);
+        padding-bottom: calc(#{$navHeight} * 1.5);
       }
     }
   }

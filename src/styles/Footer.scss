@@ -1,14 +1,16 @@
+@import './vars.scss';
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: var(--footerHeight);
+  height: $footerHeight;
   width: 100%;
   box-sizing: border-box;
   padding: 1rem 0;
 
-  background: var(--secondary);
+  background: $secondary;
 
   img {
     max-height: 60px;
