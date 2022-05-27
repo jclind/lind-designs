@@ -4,6 +4,8 @@
   position: absolute;
   top: 0;
   z-index: 5;
+  display: flex;
+  justify-content: center;
   width: 100%;
 
   text-transform: capitalize;
@@ -14,6 +16,7 @@
     align-items: center;
     justify-content: center;
     max-width: $maxWidth;
+    width: 90%;
 
     .nav-header {
       position: relative;
@@ -156,6 +159,7 @@
       }
 
       .nav-links {
+        position: relative;
         flex-direction: row;
         justify-content: flex-end;
         height: $navHeight;

@@ -26,39 +26,8 @@ const Contact = () => {
                 </div>
                 info@linddesigns.com
               </div>
-              {/* <div className='address contact-item'>
-              <div className='icon-container'>
-                <IoLocationOutline className='icon' />
-              </div>
-              <div className='text'>
-              </div>
-            </div> */}
             </div>
           </div>
-          {/* <div className='form grid-item'>
-          <form action=''>
-            <label>
-              Name:
-              <input type='text' className='name' required />
-            </label>
-            <label>
-              Email:
-              <input type='text' className='email' required />
-            </label>
-            <label>
-              Message:
-              <textarea
-                name=''
-                id=''
-                cols='30'
-                rows='10'
-                className='message'
-                required
-              ></textarea>
-            </label>
-            <button className='submit section-btn'>Submit</button>
-          </form>
-        </div> */}
         </div>
       </div>
     </>

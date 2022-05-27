@@ -12,7 +12,11 @@ const HomeHero = ({ scrollToInfo }) => {
             Helping companies streamline and improve the way they buy, implement
             and manage their technology.
           </p>
-          <button type='button' className='learn-more-btn btn'>
+          <button
+            type='button'
+            className='learn-more-btn btn'
+            onClick={scrollToInfo}
+          >
             Learn More
           </button>
         </div>
@@ -23,13 +27,6 @@ const HomeHero = ({ scrollToInfo }) => {
             className='hero-img'
           />
         </div>
-        {/* <img src='/ld-logo-white-column.png' alt='Lind Designs' />
-        <div className='btns'>      
-          </button>
-          <Link href='/contact'>
-            <button className='contact page-btn'>Contact</button>
-          </Link>
-        </div> */}
       </div>
     </div>
   )

@@ -4,30 +4,36 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(80vh);
+  min-height: calc(80vh);
   width: 100%;
 
   background-image: url('/hero-background.png');
   background-position: bottom;
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-repeat: no-repeat;
   background-size: cover;
 
   .content {
     display: flex;
-    justify-content: space-between;
-    width: $maxWidth;
-    margin-top: 4rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    max-width: $maxWidth;
+    width: 90%;
+    margin-top: 8rem;
 
     .text-content {
       .title {
-        max-width: 450px;
+        text-align: center;
+        max-width: 600px;
         color: $primary-light-text;
         margin-bottom: 35px;
       }
       p.description {
+        text-align: center;
         color: $secondary-light-text;
         max-width: 450px;
+        margin: 0 auto;
         margin-bottom: 35px;
       }
       button.learn-more-btn {
@@ -37,6 +43,8 @@
         border: 2px solid $primary-light-text;
         color: $primary-light-text;
         font-weight: 700;
+        margin: 0 auto;
+        margin-bottom: 10rem;
 
         &:hover {
           background: $primary-background;
@@ -46,10 +54,10 @@
     }
 
     .hero-img-container {
-      width: 450px;
+      width: 250px;
       img {
         object-fit: contain;
-        width: 450px;
+        width: 250px;
       }
     }
     .btns {
@@ -63,15 +71,41 @@
       flex: 1;
       max-width: 40%;
     }
+
     @media screen and (min-width: $md) {
-      .btns button {
-        flex: 1;
-        max-width: 35%;
+      flex-direction: row;
+      margin-top: 0rem;
+      .text-content {
+        .title {
+          text-align: start;
+          max-width: 450px;
+          font-size: 1.75rem;
+        }
+        p.description {
+          text-align: start;
+        }
+        button.learn-more-btn {
+          margin: 0;
+        }
+      }
+      .hero-img-container {
+        width: 50%;
+        img {
+          width: 100%;
+        }
       }
     }
     @media screen and (min-width: $lg) {
-      .btns {
-        padding-bottom: calc(#{$navHeight} * 1.5);
+      .hero-img-container {
+        width: 450px;
+        img {
+          width: 450px;
+        }
+      }
+      .text-content {
+        .title {
+          font-size: 1.75rem;
+        }
       }
     }
   }
