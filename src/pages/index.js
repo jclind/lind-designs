@@ -23,6 +23,7 @@ const Home = () => {
         <meta charSet='utf8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta name='author' content='Jesse Lind' />
+        <meta name='theme-color' content='#2266ee' />
       </Head>
       <div className='page home-page'>
         <HomeHero scrollToInfo={scrollToInfo} />
