@@ -4,7 +4,7 @@ const HomeInfo = ({ homeInfoRef }) => {
   return (
     <section className='home-info section' ref={homeInfoRef}>
       <div className='section-inner'>
-        <h4 className='section-title'>About Us</h4>
+        <h4 className='section-title'>About Lind Designs</h4>
         <div className='grid'>
           <article className='about'>
             <div className='icon-container'>
