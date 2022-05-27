@@ -19,9 +19,6 @@ const Contact = () => {
         <div className='container'>
           <div className='info grid-item'>
             <h1>Contact Us</h1>
-            <p className='section-text'>
-              Email us or fill out the form and we will get back to you promptly
-            </p>
             <div className='info-content'>
               <div className='email contact-item'>
                 <div className='icon-container'>
