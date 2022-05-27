@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Hamburger from 'hamburger-react'
@@ -7,6 +7,14 @@ import { navLinks } from '../assets/data/navLinks'
 const Navbar = () => {
   const [show, setShow] = useState(false)
   const router = useRouter()
+
+  useEffect(() => {
+    if (show) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflowY = 'scroll'
+    }
+  }, [show])
 
   const handleClick = () => {
     setShow(false)
@@ -18,11 +26,19 @@ const Navbar = () => {
         <div className='nav-header'>
           <div className='logo-container'>
             <Link href='/' exact={true} onClick={handleClick}>
-              <img
-                src='/ld-logo-black.png'
-                alt='Lind Designs'
-                className='logo'
-              />
+              {router.pathname === '/' ? (
+                <img
+                  src='/ld-logo-white.png'
+                  alt='Lind Designs'
+                  className='logo'
+                />
+              ) : (
+                <img
+                  src='/ld-logo-black.png'
+                  alt='Lind Designs'
+                  className='logo'
+                />
+              )}
             </Link>
           </div>
           <button
@@ -48,9 +64,15 @@ const Navbar = () => {
               </div>
             )
           })}
-          <div className='nav-link contact-link' onClick={handleClick}>
-            <Link href='/contact'>Contact</Link>
-          </div>
+          <button
+            onClick={() => {
+              router.push('/contact')
+              handleClick()
+            }}
+            className='nav-link contact-link'
+          >
+            Contact
+          </button>
         </div>
       </div>
     </nav>

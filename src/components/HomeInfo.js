@@ -4,13 +4,13 @@ const HomeInfo = ({ homeInfoRef }) => {
   return (
     <section className='home-info section' ref={homeInfoRef}>
       <div className='section-inner'>
-        <h1 className='section-title'>Welcome to Lind Designs</h1>
+        <h4 className='section-title'>About Us</h4>
         <div className='grid'>
           <article className='about'>
             <div className='icon-container'>
               <BsPeople className='icon' />
             </div>
-            <h2 className='article-title'>About Us</h2>
+            <h3 className='article-title'>About Us</h3>
             <p className='article-text'>
               Lind Designs is a provider of enterprise technology solutions and
               services, with expertise enabling organizations to overcome
@@ -23,7 +23,7 @@ const HomeInfo = ({ homeInfoRef }) => {
             <div className='icon-container'>
               <BsBagCheck className='icon' />
             </div>
-            <h2 className='article-title'>Products</h2>
+            <h3 className='article-title'>Products</h3>
             <p className='article-text'>
               Leading vendor partners:
               <ul>
@@ -70,7 +70,7 @@ const HomeInfo = ({ homeInfoRef }) => {
             <div className='icon-container'>
               <BsGear className='icon' />
             </div>
-            <h2 className='article-title'>Services</h2>
+            <h3 className='article-title'>Services</h3>
             <p className='article-text'>
               We specialize in virtualization and backup services tailored to
               your servicing needs.
@@ -80,7 +80,7 @@ const HomeInfo = ({ homeInfoRef }) => {
             <div className='icon-container'>
               <BsChatText className='icon' />
             </div>
-            <h2 className='article-title'>Contact us</h2>
+            <h3 className='article-title'>Contact us</h3>
             <p className='article-text'>
               Email info@linddesigns for a free consultation.
             </p>

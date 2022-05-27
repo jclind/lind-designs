@@ -5,7 +5,16 @@ $lg: 1024px;
 $xl: 1280px;
 $xl2: 1536px;
 
-$primary: #0d60ff;
+$primary-text: #313131;
+$secondary-text: #4b4b4b;
+
+$primary-light-text: #fff;
+$secondary-light-text: rgb(235, 235, 235);
+
+$primary-background: #eee;
+$secondary-background: rgb(247, 247, 247);
+
+$primary: #2266ee;
 $primary-0: #e6efff;
 $primary-50: #cedfff;
 $primary-100: #b6cfff;
@@ -19,7 +28,7 @@ $primary-800: #0943b2;
 $primary-900: #073999;
 $primary-1000: #06307f;
 $primary-1100: #031c4c;
-$secondary: #ffac0d;
+$secondary: #f0a208;
 $secondary-0: #fff6e6;
 $secondary-50: #ffeece;
 $secondary-100: #ffdd9e;
@@ -51,10 +60,10 @@ $purple: #5e1aa4;
 $red: #ef2020;
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$maxWidth: 1200px;
+$maxWidth: 1100px;
 $headingFont: 'Montserrat', sans-serif;
 $bodyFont: 'Zen Kaku Gothic New', sans-serif;
-$navHeight: 6rem;
+$navHeight: 5.5rem;
 $footerHeight: 8rem;
 $borderRadius: 5px;
 $transition: 0.3s ease-in-out all;

@@ -17,6 +17,7 @@ body {
   line-height: 1.75;
   margin: 0;
   padding: 0;
+  background: $primary-background;
 }
 
 p {
@@ -50,7 +51,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 
 h5 {
@@ -72,6 +73,15 @@ button {
   box-shadow: none;
   background: none;
   cursor: pointer;
+}
+
+.link-btn {
+  padding: 14px 30px !important;
+  background: $secondary;
+  color: $primary-text;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 20px;
 }
 
 label {
@@ -111,12 +121,6 @@ ul {
   color: $gray-1000;
   padding: 0.75rem 1.5rem;
   border-radius: $borderRadius;
-}
-
-.section-inner {
-  height: 100%;
-  width: 100%;
-  padding: 4rem 0;
 }
 
 // /* Input autocomplete color */

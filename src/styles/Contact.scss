@@ -8,8 +8,8 @@
   min-height: calc(100vh - #{$navHeight} - #{$footerHeight});
   width: 100%;
 
-  background: $gray-1100;
-  color: $gray-200;
+  background: $primary-background;
+  color: $primary-text;
 
   .container {
     display: grid;

@@ -4,18 +4,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  margin-bottom: 6rem;
   width: 100%;
 
-  background: $gray-1100;
   color: $gray-200;
   text-align: center;
 
-  h1 {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+  .section-inner {
+    height: 100%;
+    width: 100%;
+
+    .section-title {
+      color: $primary-text;
+      margin-bottom: 2rem;
+    }
   }
+  // h1 {
+  //   width: 90%;
+  //   margin: 0 auto;
+  //   margin-bottom: 4rem;
+  // }
 
   .grid {
     display: grid;
@@ -31,8 +39,12 @@
       padding: 1rem 0.5rem 2rem 0.5rem;
       border-radius: $borderRadius;
 
-      background: $gray-1000;
+      background: $secondary-background;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+
+      .article-title {
+        color: $primary-text;
+      }
 
       p {
         display: flex;
@@ -41,6 +53,7 @@
         width: 90%;
         margin: 0 auto;
         margin-bottom: 2 + rem;
+        color: $secondary-text;
 
         ul {
           display: grid;

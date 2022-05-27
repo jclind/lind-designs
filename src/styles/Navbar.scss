@@ -1,9 +1,11 @@
 @import './vars';
 
 .navbar {
+  position: absolute;
+  top: 0;
+  z-index: 5;
   width: 100%;
 
-  background: $gray-100;
   text-transform: capitalize;
 
   .nav-center {
@@ -12,7 +14,6 @@
     align-items: center;
     justify-content: center;
     max-width: $maxWidth;
-    margin: 0 auto;
 
     .nav-header {
       position: relative;
@@ -25,13 +26,14 @@
       .logo-container {
         display: flex;
         align-items: center;
+        z-index: 10;
 
         .logo {
           display: flex;
           justify-content: center;
           align-items: center;
           height: $navHeight;
-          height: 60%;
+          height: 45px;
 
           cursor: pointer;
         }
@@ -42,19 +44,25 @@
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+        z-index: 10;
 
-        color: $gray-1000;
+        color: $primary-background;
       }
     }
 
     .nav-links {
+      position: absolute;
+      top: 0;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 0.25rem;
       height: 0;
-      width: 90%;
+      width: 100vw;
       overflow: hidden;
+      box-sizing: border-box;
+      opacity: 0;
 
       transition: $transition;
 
@@ -66,18 +74,38 @@
         width: 100%;
         border-top: 1px solid $borderColor;
 
-        color: $gray-1000;
+        color: $primary-light-text;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+
+        &:hover a {
+          border-bottom: 1px solid $primary-light-text;
+          margin-bottom: -1px;
+        }
       }
-      .active-link {
-        color: $gray-1100;
-        text-decoration: underline;
-        text-underline-offset: 10px;
+      .contact-link {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px 25px !important;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 1.1rem !important;
+        border: 2px solid $primary-background !important;
+        border-radius: 20px !important;
+
+        &:hover {
+          background: $primary-background;
+          color: $primary;
+        }
       }
     }
     .nav-links.show-links {
-      height: 8rem;
+      width: 100vw;
+      height: 100vh;
+
+      background: $primary;
+      padding-bottom: 10 rem;
+      opacity: 1;
     }
     @media screen and (min-width: $sm) {
       flex-direction: row;
@@ -99,10 +127,6 @@
           padding: 0 2rem;
           border: none;
           border-radius: $borderRadius;
-        }
-        .contact-link {
-          padding: 0.5rem 1rem;
-          background: $secondary;
         }
       }
       .nav-links.show-links {
