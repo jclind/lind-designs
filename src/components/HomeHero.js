@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 const HomeHero = ({ scrollToInfo }) => {
   return (
     <div className='home-hero'>
