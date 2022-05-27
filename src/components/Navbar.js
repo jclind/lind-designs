@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className='nav-header'>
           <div className='logo-container'>
             <Link href='/' exact={true} onClick={handleClick}>
-              {router.pathname === '/' ? (
+              {router.pathname === '/' || show ? (
                 <img
                   src='/ld-logo-white.png'
                   alt='Lind Designs'
@@ -42,15 +42,21 @@ const Navbar = () => {
             </Link>
           </div>
           <button
-            className={show ? 'nav-btn show' : 'nav-btn'}
+            className={`nav-btn ${show ? 'show' : ''} ${
+              router.pathname !== '/' ? 'dark-text' : ''
+            }`}
             onClick={() => {
               setShow(!show)
             }}
           >
-            <Hamburger size={35} hideOutline={true} toggled={show} />
+            <Hamburger size={32} hideOutline={true} toggled={show} />
           </button>
         </div>
-        <div className={show ? 'nav-links show-links' : 'nav-links'}>
+        <div
+          className={`nav-links${show ? ' show-links' : ''}${
+            router.pathname !== '/' ? ' dark-text' : ''
+          }`}
+        >
           {navLinks.map(link => {
             const { name, path } = link
             return (

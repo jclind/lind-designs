@@ -48,6 +48,12 @@
 
         color: $primary-background;
       }
+      .nav-btn.dark-text {
+        color: $primary-text;
+      }
+      .nav-btn.show.dark-text {
+        color: $primary-background;
+      }
     }
 
     .nav-links {
@@ -104,9 +110,42 @@
       height: 100vh;
 
       background: $primary;
-      padding-bottom: 10 rem;
+      padding-bottom: 10rem;
       opacity: 1;
     }
+    .nav-links.dark-text {
+      .nav-link {
+        color: $primary-text;
+
+        &:hover a {
+          border-bottom: 1px solid $primary-text;
+        }
+      }
+      .contact-link {
+        height: fit-content;
+        width: fit-content;
+        padding: 10px 25px !important;
+        box-sizing: border-box;
+        font-weight: 600;
+        font-size: 1.1rem !important;
+        border: 2px solid $secondary !important;
+        border-radius: 20px !important;
+        color: $primary-text;
+        background: $secondary;
+
+        &:hover {
+          // background: $secondary;
+          // text-decoration: underline;
+          color: $primary-background;
+        }
+      }
+    }
+    .nav-links.show-links.dark-text {
+      .nav-link {
+        color: $primary-light-text;
+      }
+    }
+
     @media screen and (min-width: $sm) {
       flex-direction: row;
       height: $navHeight;
@@ -120,6 +159,7 @@
         flex-direction: row;
         justify-content: flex-end;
         height: $navHeight;
+        opacity: 1;
 
         .nav-link {
           height: fit-content;
